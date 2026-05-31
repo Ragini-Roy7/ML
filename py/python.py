@@ -191,3 +191,46 @@ print(upper_fruits)
 # sq= list(map(lambda x : x * x, n))
 # print(sq)
 
+#tuple unpacking
+tuple= (124,564,354,753,764)
+a,b,c,d, e= tuple
+#added all the values
+print(a + b + c+ d+ e)
+
+#without parentheses
+a,b= 5,9
+print(a)
+print(b)
+
+#unpacking from lists
+li=[3.14,3.147,3.14567]
+a,b,c=li 
+print(li)
+
+#using extended unpacking
+nums= [12,13,14,15,16,17,18,19,22]
+#collecting remaining values from list
+a,*b,c=nums
+print(a)
+print(b)
+print(c)
+
+pairs= [(1,'a'), (2, 'b') , (3,'c')]
+for nums,ch in pairs:
+    print(nums,ch)
+
+#exe
+planet= 'earth'
+diameter= 12742
+#('The diameter of {} is {}'.format(a=planet, b=diameter))
+#IndexError: Replacement index 0 out of range for positional args tuple
+print('The diameter of {a} is {b}'.format(a=planet, b=diameter))
+
+s= 'sam is cool in painting portrait'
+print(s.split())
+
+lst= [1,2,[3,4],[5,[100,200,['hello']],23,11],1,7]
+print(lst[3][1] [2])
+
+d={'k1': [1,2,3, {'tricky': ['oh', 'man', 'inception', {'target': [1,2,3,'hello']}]}]}
+print(d['k1'][3]['tricky'][3]['target'][3])
